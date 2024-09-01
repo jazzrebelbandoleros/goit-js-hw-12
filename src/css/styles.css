@@ -5,6 +5,7 @@
 
 .container {
   padding-top: 36px;
+  padding-bottom: 36px;
   max-width: 1128px;
   margin: 0 auto;
 }
@@ -26,7 +27,8 @@
   outline: transparent;
 }
 
-.search-btn {
+.search-btn,
+.load-more {
   font-size: 14px;
   padding: 8px 16px;
   border-radius: 8px;
@@ -39,8 +41,15 @@
   transition: background-color 0.2s ease;
 }
 
-.search-btn:hover {
+.search-btn:hover,
+.load-more:hover {
   background-color: #6c8cff;
+}
+
+.load-more {
+  display: block;
+  height: 40px;
+  margin: 0 auto;
 }
 
 .gallery {
@@ -100,7 +109,8 @@
   line-height: 2;
 }
 
-.is-hidden {
+.loader.is-hidden,
+.load-more.is-hidden {
   display: none;
 }
 
@@ -132,10 +142,6 @@
   color: blue;
   transform: rotateY(70deg);
   animation-delay: 0.4s;
-}
-
-.is-hidden {
-  display: none;
 }
 
 @keyframes rotate {

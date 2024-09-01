@@ -14,13 +14,15 @@
             class="search-input js-search-input"
             type="text"
             name="user_query"
-            required
             placeholder="Search images..."
           />
           <button class="search-btn" type="submit">Search</button>
         </form>
-        <span class="loader js-loader is-hidden"></span>
         <ul class="gallery js-gallery"></ul>
+        <button class="load-more js-load-more is-hidden" type="button">
+          Load more
+        </button>
+        <span class="loader js-loader is-hidden"></span>
       </div>
     </section>
     <script type="module" src="./main.js"></script>
